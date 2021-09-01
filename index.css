@@ -9,10 +9,14 @@
     position: relative;
 }
 
+
+/* Navbar Style */
+
 .navBar {
     padding: 0 80px;
     height: 60px;
-    background-color: red;
+    color: white;
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,26 +27,34 @@ ul {
     text-decoration: none;
 }
 
+.left-side img {
+    width: 150px;
+}
+
 .right-side ul li {
     display: flex;
     justify-content: space-between;
     margin-left: 50px;
     float: left;
+    cursor: pointer;
 }
+
+
+/* Main-content Stle */
 
 .main-content {
     padding: 0 80px;
 }
+
+
+/* About Me Sec Style */
 
 #aboutMe {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.photo {
-    padding-top: 80px;
+    padding: 80px 0;
 }
 
 .photo img {
@@ -50,5 +62,140 @@ ul {
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
-    border: 1px solid black;
+}
+
+.text h1 {
+    padding: 50px 0;
+    width: 900px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.text span {
+    opacity: 0;
+}
+
+.socMed ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socMed a i {
+    margin: 15px;
+    color: black;
+}
+
+
+/* Skills Sec Style */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 30pt;
+    font-weight: 600;
+    margin: 80px 0;
+}
+
+.skills ul {
+    display: flex;
+}
+
+.skills li a {
+    margin: 20px;
+    color: black;
+}
+
+
+/* Project sec style */
+
+.project {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card img {
+    object-fit: cover;
+    width: 400px;
+    border-radius: 20px 0 20px 0px;
+}
+
+.card {
+    position: relative;
+    margin: 20px;
+}
+
+.card p {
+    display: none;
+}
+
+.card:hover p {
+    display: block;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+}
+
+
+/* contact sec style */
+
+.contact {
+    margin-top: 30px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.l-contact {
+    width: 50%;
+    position: relative;
+}
+
+.l-contact img {
+    width: 600px;
+}
+
+.r-contact {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.r-contact h1 {
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+.form input,
+textarea {
+    width: 100%;
+    border: 2px solid skyblue;
+    border-radius: 15px;
+    margin: 5px;
+    height: 40px;
+    padding: 10px;
+}
+
+.form textarea {
+    width: 100%;
+    border: 2px solid skyblue;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    height: 300px;
 }
