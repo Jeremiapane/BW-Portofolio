@@ -1,2 +1,3 @@
-# portofolio
-Ini adalah website portofolio saya. Rencananya website ini akan saya bangun dengan menggunakan html, css dan javascript
+# Black&White Simple Portofolio
+
+Repository ini merupakan sebuah portofolio sederhana yang dibangun menggunakan html,css dan javascript serta menggunakan tema black&white pada tampilan halaman website portofolio ini.
