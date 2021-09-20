@@ -22,24 +22,32 @@
             <div class="left-side">
                 <a href="#">JEPDEV</a>
             </div>
-            <div class="right-side">
+            <div class="burger-btn">
+                <a href="#"><i class="fas fa-bars"></i></a>
+            </div>
+            <div class="right-side" id="nav">
                 <ul>
                     <li>
-                        <a href="#"> About Me</a>
+                        <a href="#aboutMe"> About Me</a>
                     </li>
                     <li>
-                        <a href="#">Skills</a>
+                        <a href="#skills">Skills</a>
                     </li>
                     <li>
-                        <a href="#"> Contact</a>
+                        <a href="#project">Project</a>
                     </li>
+                    <li>
+                        <a href="#contact"> Contact</a>
+                    </li>
+
                 </ul>
+
             </div>
         </div>
 
         <!-- main content -->
         <div class="main-content">
-            <div id="aboutMe">
+            <div id="aboutMe" class="aboutMe">
                 <div class="photo">
                     <img src="img/profile.JPG" alt="photo-profile">
                 </div>
@@ -65,7 +73,7 @@
                 </div>
             </div>
 
-            <div class="skills">
+            <div class="skills" id="skills">
                 <h2>Language and Tools</h2>
                 <ul>
                     <li>
@@ -92,40 +100,49 @@
                 </ul>
             </div>
 
-            <div class="project">
+            <div class="project" id="project">
                 <h2>Project</h2>
                 <div class="cards">
                     <div class="card">
-                        <img src="img/project.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, adipisci.</p>
+                        <img src="img/project.jpg" alt="" class="image">
+                        <div class="overlay">
+                            <div class="text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, adipisci.</div>
+                        </div>
+
 
                     </div>
                     <div class="card">
-                        <img src="img/project.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, adipisci.</p>
+                        <img src="img/project.jpg" alt="" class="image">
+                        <div class="overlay">
+                            <div class="text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, adipisci.</div>
+                        </div>
+
 
                     </div>
                     <div class="card">
-                        <img src="img/project.jpg" alt="">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, adipisci.</p>
+                        <img src="img/project.jpg" alt="" class="image">
+                        <div class="overlay">
+                            <div class="text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, adipisci.</div>
+                        </div>
+
 
                     </div>
+
                 </div>
 
             </div>
 
-
-            <div class="contact">
+            <div class="contact" id="contact">
                 <div class="l-contact">
                     <img src="img/undraw_hire.svg" alt="illustration">
                 </div>
                 <div class="r-contact">
                     <h1>Get in touch</h1>
                     <div class="form">
-                        <form action="#">
-                            <input type="text" id="fname" name="fname" placeholder="Enter your full name...">
-                            <input type="text" id="email" name="email" placeholder="Enter your email...">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="say something here..."></textarea>
+                        <form action="POST" method="POST">
+                            <input type="text" id="fname" name="fname" placeholder="Enter your full name..." required>
+                            <input type="text" id="email" name="email" placeholder="Enter your email..." required>
+                            <textarea name="" id="" cols="30" rows="10" placeholder="say something here..." required></textarea>
                             <input type="submit" class="btnSubmit" value="Send">
                         </form>
                     </div>
@@ -134,7 +151,7 @@
         </div>
 
         <!-- footer -->
-        <div class="footer">
+        <div class="footer" id=" footer">
             <p>Made by <a href="#">Jeremia Pane</a></p>
         </div>
     </div>
@@ -142,6 +159,7 @@
     <!-- script -->
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
     <script src="index.js"></script>
+    <script src="main.js"></script>
 </body>
 
 
