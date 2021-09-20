@@ -1,166 +1,366 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    scroll-behavior: smooth;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-
-    <!-- link style-->
-    <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" href="">
-
-    <title>Portofolio</title>
-</head>
-
-<body>
-    <div class="container">
-        <!-- navigation -->
-        <div class="navBar">
-            <div class="left-side">
-                <a href="#">JEPDEV</a>
-            </div>
-            <div class="burger-btn">
-                <a href="#"><i class="fas fa-bars"></i></a>
-            </div>
-            <div class="right-side" id="nav">
-                <ul>
-                    <li>
-                        <a href="#aboutMe"> About Me</a>
-                    </li>
-                    <li>
-                        <a href="#skills">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#project">Project</a>
-                    </li>
-                    <li>
-                        <a href="#contact"> Contact</a>
-                    </li>
-
-                </ul>
-
-            </div>
-        </div>
-
-        <!-- main content -->
-        <div class="main-content">
-            <div id="aboutMe" class="aboutMe">
-                <div class="photo">
-                    <img src="img/profile.JPG" alt="photo-profile">
-                </div>
-                <div class="desc">
-                    <div class="text">
-                        <h1> Hello Everyone, I'm a
-                            <span class="type"></span>
-                        </h1>
-                    </div>
-                    <div class="socMed">
-                        <ul>
-                            <li>
-                                <a href="https://github.com/Jeremiapane" target="_blank"><i class="fab fa-github-square fa-3x"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/in/jeremiapane/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/jeremia.pane/" target="_blank"><i class="fab fa-instagram-square fa-3x "></i></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skills" id="skills">
-                <h2>Language and Tools</h2>
-                <ul>
-                    <li>
-                        <a href="#" title="HTML5"><i class="fab fa-html5 fa-7x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" title="CSS3"><i class="fab fa-css3-alt fa-7x"></i></i></a>
-                    </li>
-                    <li>
-                        <a href="#" title="Javascript"><i class="fab fa-js fa-7x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" title="React"><i class="fab fa-react fa-7x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" title="PHP"><i class="fab fa-php fa-7x"></i></i></a>
-                    </li>
-                    <li>
-                        <a href="#" title="Laravel"><i class="fab fa-laravel fa-7x"></i></a>
-                    </li>
-                    <li>
-                        <a href="#" title="Figma"><i class="fab fa-figma fa-7x"></i></a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="project" id="project">
-                <h2>Project</h2>
-                <div class="cards">
-                    <div class="card">
-                        <img src="img/project.jpg" alt="" class="image">
-                        <div class="overlay">
-                            <div class="text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, adipisci.</div>
-                        </div>
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: black;
+}
 
 
-                    </div>
-                    <div class="card">
-                        <img src="img/project.jpg" alt="" class="image">
-                        <div class="overlay">
-                            <div class="text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, adipisci.</div>
-                        </div>
+/* Track */
+
+body::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
 
 
-                    </div>
-                    <div class="card">
-                        <img src="img/project.jpg" alt="" class="image">
-                        <div class="overlay">
-                            <div class="text-overlay">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, adipisci.</div>
-                        </div>
+/* Handle */
+
+body::-webkit-scrollbar-thumb {
+    background: #272626;
+}
 
 
-                    </div>
+/* Handle on hover */
 
-                </div>
+body::-webkit-scrollbar-thumb:hover {
+    background: #3c996a;
+}
 
-            </div>
-
-            <div class="contact" id="contact">
-                <div class="l-contact">
-                    <img src="img/undraw_hire.svg" alt="illustration">
-                </div>
-                <div class="r-contact">
-                    <h1>Get in touch</h1>
-                    <div class="form">
-                        <form action="POST" method="POST">
-                            <input type="text" id="fname" name="fname" placeholder="Enter your full name..." required>
-                            <input type="text" id="email" name="email" placeholder="Enter your email..." required>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="say something here..." required></textarea>
-                            <input type="submit" class="btnSubmit" value="Send">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- footer -->
-        <div class="footer" id=" footer">
-            <p>Made by <a href="#">Jeremia Pane</a></p>
-        </div>
-    </div>
-
-    <!-- script -->
-    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
-    <script src="index.js"></script>
-    <script src="main.js"></script>
-</body>
+.container {
+    height: 100%;
+    position: relative;
+}
 
 
-</html>
+/* Navbar Style */
+
+.navBar {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    padding: 0 80px;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.burger-btn a {
+    color: white;
+    display: none;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.left-side a {
+    font-size: 20pt;
+    font-style: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.right-side a {
+    font-size: 12pt;
+    text-decoration: none;
+    color: white;
+}
+
+.right-side ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    float: left;
+    cursor: pointer;
+}
+
+.icon {
+    display: none;
+}
+
+
+/* Main-content Stle */
+
+.main-content {
+    padding: 0 80px;
+}
+
+
+/* About Me Sec Style */
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+
+.photo img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.text h1 {
+    padding: 50px 0;
+    width: 900px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.text span {
+    color: #3c996a;
+}
+
+.socMed ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socMed a i {
+    margin: 15px;
+    color: black;
+}
+
+
+/* Skills Sec Style */
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-size: 30pt;
+    font-weight: 600;
+    margin: 80px 0;
+}
+
+.skills ul {
+    display: flex;
+}
+
+.skills li a {
+    margin: 20px;
+    color: black;
+}
+
+
+/* Project sec style */
+
+.project {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    margin: 30px;
+}
+
+.image {
+    border-radius: 20px 0 20px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    border-radius: 20px 0 20px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.text-overlay {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* contact sec style */
+
+.contact {
+    margin-top: 30px;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.l-contact {
+    width: 50%;
+    position: relative;
+}
+
+.l-contact img {
+    width: 600px;
+}
+
+.r-contact {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.r-contact h1 {
+    margin-bottom: 20px;
+    padding-left: 5px;
+}
+
+.form input {
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    margin: 5px;
+    height: 40px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form textarea {
+    width: 100%;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    margin: 5px;
+    padding: 10px;
+    height: 300px;
+}
+
+.form input:last-child {
+    padding: 0;
+}
+
+.btnSubmit {
+    background-color: black;
+    color: white;
+    font-size: 12pt;
+}
+
+
+/* footer sec style */
+
+.footer {
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+}
+
+
+/* 
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    padding: 0 80px;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center; */
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:768px) {
+    .right-side {
+        display: none;
+    }
+    .burger-btn a {
+        display: flex;
+    }
+    .aboutMe {
+        overflow-x: hidden;
+    }
+    .skills ul {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    .skills ul li {
+        margin-bottom: 10px;
+    }
+    .cards {
+        flex-direction: column;
+    }
+    .card {
+        padding: 0;
+        width: 100%;
+        margin-left: 0;
+    }
+    .skills h2 {
+        text-align: center;
+    }
+    .skills ul {
+        padding: 0;
+    }
+    .skills ul li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .l-contact {
+        display: none;
+    }
+    .r-contact {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: grid;
+    }
+    .contact {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+}
