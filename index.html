@@ -18,14 +18,26 @@
 <body>
     <div class="container">
         <!-- navigation -->
-        <div class="navBar">
+
+        <div class="topnav" id="myTopnav">
+            <div class="l"> <a href="#">PORTOFOLIO</a></div>
+
+            <div class="r">
+                <a href="#contact"> Contact</a>
+                <a href="#project">Project</a>
+                <a href="#skills">Skills</a>
+                <a href="#aboutMe"> About Me</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <!-- <div class="navBar">
             <div class="left-side">
                 <a href="#">JEPDEV</a>
             </div>
-            <div class="burger-btn">
-                <a href="#"><i class="fas fa-bars"></i></a>
-            </div>
-            <div class="right-side" id="nav">
+
+            <div class="right-side" id="myTopnav">
                 <ul>
                     <li>
                         <a href="#aboutMe"> About Me</a>
@@ -39,12 +51,16 @@
                     <li>
                         <a href="#contact"> Contact</a>
                     </li>
+                    <li>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
 
                 </ul>
 
             </div>
-        </div>
-
+        </div> -->
         <!-- main content -->
         <div class="main-content">
             <div id="aboutMe" class="aboutMe">
@@ -160,6 +176,17 @@
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
     <script src="index.js"></script>
     <script src="main.js"></script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 
