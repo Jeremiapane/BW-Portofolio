@@ -402,9 +402,10 @@ h2 {
 @media screen and (max-width: 600px) {
     .topnav {
         padding: 0;
+        position: fixed;
     }
     .topnav.responsive {
-        position: relative;
+        position: fixed;
     }
     .topnav.responsive .icon {
         position: absolute;
